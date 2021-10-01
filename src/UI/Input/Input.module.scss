@@ -1,0 +1,42 @@
+.input {
+    position: relative;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        input {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+    i {
+        position: absolute;
+        color: #ffffff;
+        left: 8px;
+        cursor: pointer;
+        
+    }
+    .biSearch {
+        pointer-events: none
+    }
+    .biX {
+        left: initial !important;
+        right: 8px !important;
+        font-size: 25px;
+        color: #000000;
+    }
+    input {
+        width: 100%;
+        outline: 0;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        background: transparent;
+        font-size: 16px;
+        padding: 6px;
+        color: #ffffff;
+        transition: background-color 0.2s;
+        &:focus {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+}

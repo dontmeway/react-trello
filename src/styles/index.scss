@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Noto Sans Display', sans-serif;
+    background-color: #f0efef;
 }
 
 .container {
@@ -17,5 +18,22 @@ body {
 
 .hidden {
     display: none !important;
+}
+.dropdownWrapper {
+    position: relative;
+    &.active {
+        button {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+
+.dropdownItems {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 

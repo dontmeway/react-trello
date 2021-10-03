@@ -12,7 +12,6 @@ export const Input = () => {
             setIsHidden(false)
         }
     }
-    console.log(isHidden);
     
     React.useEffect(() => {
         window.addEventListener("click", handleCheck)

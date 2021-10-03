@@ -1,0 +1,123 @@
+.workPlace {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.1s;
+    cursor: pointer;
+    &:hover {
+        background: rgba(9, 30, 66, 0.08);
+    }
+    span {
+        padding: 5px 10px;
+        border-radius: 4px;
+        background: lightgreen;
+        margin-right: 10px;
+    }
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;   
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.1s;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background: rgba(9, 30, 66, 0.08);
+    }
+    .dashboardIcon {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background: red;
+        margin-right: 10px;
+    }
+    .dashboardContent {
+        svg {
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            transition: 200ms all;
+            &.active {
+                fill: orange;
+            }
+            &:hover {
+                transform: scale(1.2, 1.2)
+            }
+        }
+        p {
+            margin-bottom: 0 !important;
+        }
+        span {
+            font-size: 14px;
+        }
+
+    }
+}
+
+.favorites {
+    display: flex;
+    align-items: center;   
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.1s;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background: rgba(9, 30, 66, 0.08);
+    }
+    .favoritesIcon {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background: red;
+        margin-right: 10px;
+    }
+    .favoritesContent {
+        svg {
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            transition: 200ms all;
+            &.active {
+                fill: orange;
+            }
+            &:hover {
+                transform: scale(1.2, 1.2)
+            }
+        }
+        p {
+            margin-bottom: 0 !important;
+        }
+        span {
+            font-size: 14px;
+        }
+
+    }
+}
+
+.createDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        display: flex;
+        align-items: center;
+        outline: 0;
+        border: 0;
+        background-color: #026AA7 !important;
+        color: #ffffff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: opacity 0.2s;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
